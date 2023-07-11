@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    
+        <link rel="stylesheet" href ="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="search-box">
+        <form id="search-form">
+            <input type="search"
+            placeholder="Enter City Name"
+            id="search-input"
+            required
+            autocomplete="off"
+            />
+            <br>
+        </br>
+        <button id="search-button">Search</button>
+
+        </form>
+
+
+        <main id="app-container">
+            <div id="location">
+                <p>-------</p>
+            </div>
+                <div id="temp">
+                    <img id="temp-icon"  src="./icons/sun.svg" alt="">
+                    <p><span id="temp-value">-----</span> <span id="temp-unit" >&#176c</span> </p>
+                </div>
+
+                <div id="climate">
+                    <p>------</p>
+                </div>
+        </main>
+    </div>
+    <div class="weatherContainer-box">
+        <center>
+            <p>
+            <h1 id="Para1">5 Days Weather Forecast</h1>
+            </p>
+        </center>
+            <div id = "weatherContainer">
+                <div id="iconsContainer">    
+                    <div class = "icons">
+                        <p class="weather" id="day1">Dat 1</p>
+                        <br/>
+                        <p id="fDate0"></p>
+                        <p id="fImg0"><img src="./icons/sun.svg" class="imgClass"></p>
+                        <p>Temp:<span id="fTemp0">-----</span></p>
+                        <br/>
+                        <p>Humidity:<span id="fHumidity0">-----</span></p>
+                    </div>
+                    <div class = "icons">
+                        <p class="weather" id="day2">Day 2</p>
+                        <br/>
+                        <p id="fDate1"></p>
+                        <p id="fImg1"><img src="./icons/sun.svg" class="imgClass"></p>
+                        <p>Temp:<span id="fTemp1">-----</span></p>
+                        <br/>
+                        <p>Humidity:<span id="fHumidity1">-----</span></p>
+                    </div>
+                    <div class = "icons">
+                        <p class="weather" id="day3">Day 3</p>
+                        <br/>
+                        <p id="fDate2"></p>
+                        <p id="fImg2"><img src="./icons/sun.svg" class="imgClass"></p>
+                        <p>Temp:<span id="fTemp2">-----</span></p>
+                        <br/>
+                        <p>Humidity:<span id="fHumidity2">-----</span></p>
+                    </div>
+                    <div class = "icons">
+                        <p class="weather" id="day4">Day 4</p>
+                        <br/>
+                        <p id="fDate3"></p>
+                        <p id="fImg3"><img src="./icons/sun.svg" class="imgClass"></p>
+                        <p>Temp:<span id="fTemp3">-----</span></p>
+                        <br/>
+                        <p>Humidity:<span id="fHumidity3">-----</span></p>
+                    </div>
+                    <div class = "icons">
+                        <p class="weather" id="day5">Day 5</p>
+                        <br/>
+                        <p id="fDate4"></p>
+                        <p id="fImg4"><img src="./icons/sun.svg" class="imgClass"></p>
+                        <p>Temp:<span id="fTemp4">-----</span></p>
+                        <br/>
+                        <p>Humidity:<span id="fHumidity4">-----</span></p>
+                    </div>
+                </div>
+<script src="script.js">
+
+</script>
+</body>
+</html>
